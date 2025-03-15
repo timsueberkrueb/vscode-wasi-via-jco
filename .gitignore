@@ -1,0 +1,9 @@
+out
+dist
+node_modules
+.vscode-test/
+*.vsix
+wasi_modules/
+*.wasm
+preview2-shim/
+target/

@@ -1,0 +1,5 @@
+package rust-wasi:hello-world@0.1.0;
+
+world hello-world {
+    export hello: func() -> s32;
+}
