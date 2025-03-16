@@ -1,0 +1,16 @@
+[package]
+name = 'vscode-wasix'
+version = '0.1.0'
+
+[[module]]
+name = 'vscode-wasix'
+source = 'target/wasm32-wasmer-wasi/release/vscode-wasix.wasm'
+abi = 'wasi'
+
+[module.interfaces]
+wasi = '0.1.0-unstable'
+
+[[command]]
+name = 'vscode-wasix'
+module = 'vscode-wasix'
+runner = 'wasi'
